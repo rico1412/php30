@@ -6,7 +6,7 @@ use \core\Controller;
 class NewsController extends Controller {
 	public function showList(){
 
-		$model = \core\App::single('\\model\\NewsModel');
+		$model = M('\\model\\NewsModel');
 		$sql = "select * from news where 1 order by id desc limit 10";
 		$datas = $model->getRows($sql);
 		
