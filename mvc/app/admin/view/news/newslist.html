@@ -27,7 +27,7 @@
 				<td>{$data_val.intro}</td>
 				<td>{$data_val.post_date|date_format:'%Y-%m-%d %H:%M:%S'}</td>
 				<td>
-					<a href="">编辑新闻</a>
+					<a href="{$smarty.const.URL}?p=admin&m=news&a=showUpd&id={$data_val.id}">编辑新闻</a>
 					<a href="">删除新闻</a>
 				</td>
 			</tr>

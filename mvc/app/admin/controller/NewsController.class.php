@@ -35,4 +35,36 @@ class NewsController extends Controller {
 			exit;
 		}
 	}
+
+	public function showUpd(){
+		$id = $_GET['id'];
+
+		$model = M('\\model\\NewsModel');
+		$sql = "select id, title, intro, content from news where id = {$id}";
+		$datas = $model->getRow($sql);
+		
+		$this->assign('datas', $datas);
+		$this->display('news/newsupd.html');
+	}
+
+	public function updh(){
+		$id = $_GET['id'];
+		$title = $_POST['title'];
+		$intro = $_POST['intro'];
+		$content = $_POST['content'];
+		$post_date = time() + (8*60*60);
+
+		$model = M('\\model\\NewsModel');
+		$sql = "update news set title='{$title}', intro='{$intro}', content='{$content}', post_date={$post_date} where id={$id}";
+		$re = $model->setData($sql);
+		if ($re) {
+			echo "编辑成功！！！";
+			header('Refresh: 2; url=' . URL . '?p=admin&m=news&a=showList');
+			exit;
+		} else {
+			echo "编辑失败！！！请联系管理员！！！";
+			header('Refresh: 5; url=' . URL . '?p=admin&m=news&a=showList');
+			exit;
+		}
+	}
 }
