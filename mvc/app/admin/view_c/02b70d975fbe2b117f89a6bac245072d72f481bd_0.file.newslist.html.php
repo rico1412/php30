@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-05-11 02:06:49
+/* Smarty version 3.1.29, created on 2018-05-11 07:52:49
   from "C:\Users\rico\Documents\php30\mvc\app\admin\view\news\newslist.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5af4fab9eed380_84464388',
+  'unifunc' => 'content_5af54bd1af4353_00366672',
   'file_dependency' => 
   array (
     '02b70d975fbe2b117f89a6bac245072d72f481bd' => 
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5af4fab9eed380_84464388 ($_smarty_tpl) {
+function content_5af54bd1af4353_00366672 ($_smarty_tpl) {
 if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\Users\\rico\\Documents\\php30\\mvc\\plugins\\smarty\\plugins\\modifier.date_format.php';
 ?>
 <!DOCTYPE html>
