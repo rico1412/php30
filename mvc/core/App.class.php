@@ -4,15 +4,15 @@ namespace core;
 
 class App {
 
-	public static function aa(){
-		echo "123";
-	}
-
 	private $obj = [];
 
-	public static function single ($className) {
+	public static function single ($className, $params=NULL) {
 		if (!isset($obj[$className])) {
-			$obj[$className] = new $className;
+			if (empty($params)) {
+				$obj[$className] = new $className;
+			} else {
+				$obj[$className] = new $className($params);
+			}
 		}
 		return $obj[$className];
 	}

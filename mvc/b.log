@@ -1,0 +1,5 @@
+==================发生错误的时间：2018-05-11 01:35:53
+错误信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'news values (null, '哈哈哈', 'bbb', '43', 1526002553)' at line 1
+错误码值：42000
+错误的行号：47
+出错的文件路径：C:\Users\rico\Documents\php30\mvc\core\Model.class.php

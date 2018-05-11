@@ -5,6 +5,24 @@
 	<title>新增新闻页</title>
 </head>
 <body>
-	新增新闻页
+	<form action="{$smarty.const.URL}?p=admin&m=news&a=adh" method="post">
+		<p>
+			新闻标题：<input type="text" name="title">
+		</p>
+
+		<p>
+			新闻简介：<input type="text" name="intro">
+		</p>
+
+		<p>
+			新闻内容：<textarea name="content" id="" cols="30" rows="10"></textarea>
+		</p>
+
+		<p>
+			<input type="submit" value="新增新闻">
+		</p>
+	</form>
+
+	<a href="{$smarty.const.URL}/p=admin&m=news&a=showList">返回列表页</a>
 </body>
 </html>

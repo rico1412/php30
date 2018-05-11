@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2018-05-10 14:44:57
+/* Smarty version 3.1.29, created on 2018-05-11 01:16:50
   from "C:\Users\rico\Documents\php30\mvc\app\admin\view\news\newslist.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5af45ae93d3b67_19834934',
+  'unifunc' => 'content_5af4ef02da74e2_91843351',
   'file_dependency' => 
   array (
     '02b70d975fbe2b117f89a6bac245072d72f481bd' => 
     array (
       0 => 'C:\\Users\\rico\\Documents\\php30\\mvc\\app\\admin\\view\\news\\newslist.html',
-      1 => 1525941194,
+      1 => 1526001400,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5af45ae93d3b67_19834934 ($_smarty_tpl) {
+function content_5af4ef02da74e2_91843351 ($_smarty_tpl) {
 if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\Users\\rico\\Documents\\php30\\mvc\\plugins\\smarty\\plugins\\modifier.date_format.php';
 ?>
 <!DOCTYPE html>
@@ -30,7 +30,8 @@ if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\Users\\rico\\
 </head>
 <body>
 	<p>
-		<a href="">新增新闻</a>
+		<a href="<?php echo @constant('URL');?>
+?p=admin&m=news&a=showAd">新增新闻</a>
 	</p>
 
 	<p>
